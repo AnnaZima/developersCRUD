@@ -20,8 +20,8 @@ public class SkillController {
         return skillService.updateSkill(object);
     }
 
-    public void deleteSkill(Integer id) {
-        skillService.deleteSkill(id);
+    public Skill deleteSkill(Integer id) {
+        return skillService.deleteSkill(id);
     }
 
     public List<Skill> getAll() {

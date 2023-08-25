@@ -21,8 +21,8 @@ public class SpecialtyController {
         return specialtyService.updateSpecialty(spec);
     }
 
-    public void deleteSpecialty(Integer id) {
-        specialtyService.deleteSpecialty(id);
+    public Specialty deleteSpecialty(Integer id) {
+        return specialtyService.deleteSpecialty(id);
     }
 
 

@@ -1,6 +1,7 @@
 package com.anya.crudapp.view;
 
 import com.anya.crudapp.controller.SpecialtyController;
+import com.anya.crudapp.model.Developer;
 import com.anya.crudapp.model.Specialty;
 import java.util.Scanner;
 
@@ -39,8 +40,8 @@ public class SpecialtyView {
     public void deleteSpecialty() {
         System.out.println(SPEC_ID);
         int id = scanner.nextInt();
-        specialtyController.deleteSpecialty(id);
-        System.out.println("Элемент удален");
+        Specialty specialty = specialtyController.deleteSpecialty(id);
+        System.out.println("Элемент " + specialty +  " удален");
     }
 
     public void getSpecialtyByName () {

@@ -1,15 +1,29 @@
 -- liquibase formatted sql
 
--- changeset liquibase:1
+CREATE TABLE specialty (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    spec_name VARCHAR(255) NOT NULL);
 
-CREATE TABLE `developers` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(255) DEFAULT NULL,
-  `last_name` varchar(255) DEFAULT NULL,
-  `specialty_id` int DEFAULT NULL,
-  `status` varchar(255) DEFAULT 'ACTIVE',
-  PRIMARY KEY (`id`),
-  KEY `specialty_id_idx` (`specialty_id`),
-  CONSTRAINT `specialty_id` FOREIGN KEY (`specialty_id`) REFERENCES `specialty` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE developers (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(255) DEFAULT NULL,
+  last_name VARCHAR(255) DEFAULT NULL,
+  specialty_id INT DEFAULT NULL,
+  status VARCHAR(255) DEFAULT 'ACTIVE',
+  FOREIGN KEY (specialty_id) REFERENCES specialty (id)
+);
+
+CREATE TABLE skills (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    skill_name VARCHAR(255) NOT NULL);
+
+CREATE TABLE skill_set (
+    developer_id INT NOT NULL,
+    skill_id INT NOT NULL,
+    FOREIGN KEY (developer_id) REFERENCES developers(id),
+    FOREIGN KEY (skill_id) REFERENCES skills(id),
+    UNIQUE (developer_id, skill_id)
+     );
+
+
 

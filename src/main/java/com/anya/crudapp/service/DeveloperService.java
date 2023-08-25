@@ -56,8 +56,8 @@ public class DeveloperService {
         return developerRepository.update(developer);
     }
 
-    public void deleteDeveloper(Integer id) {
-        developerRepository.delete(id);
+    public Developer deleteDeveloper(Integer id) {
+       return developerRepository.delete(id);
     }
 
     public List<Developer> getAll() {

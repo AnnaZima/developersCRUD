@@ -14,11 +14,41 @@
         <artifactId>mysql-connector-java</artifactId>
         <version>8.0.33</version>
     </dependency>
+        <dependency>
+        <groupId>org.liquibase</groupId>
+        <artifactId>liquibase-core</artifactId>
+            <version>4.23.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.10.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>5.4.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>5.4.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <properties>
-        <maven.compiler.source>19</maven.compiler.source>
-        <maven.compiler.target>19</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <propertyFile>liquibase.properties</propertyFile>
     </properties>
@@ -26,11 +56,21 @@
   <build>
       <plugins>
         <plugin>
-            <groupId>org.liquibase</groupId>
-            <artifactId>liquibase-maven-plugin</artifactId>
-            <version>4.2.0</version>
-            
-        </plugin>
+              <groupId>org.liquibase</groupId>
+              <artifactId>liquibase-maven-plugin</artifactId>
+              <version>4.2.0</version>
+              <configuration>
+                  <propertyFile>src/main/resources/liquibase.properties</propertyFile>
+              </configuration>
+              <executions>
+                  <execution>
+                  <phase>process-resources</phase>
+                  <goals>
+                      <goal>update</goal>
+                  </goals>
+              </execution>
+              </executions>
+          </plugin>
     </plugins>
   </build>
 

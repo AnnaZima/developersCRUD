@@ -32,8 +32,8 @@ public class SkillService {
         return skillRepository.get(id);
     }
 
-    public void deleteSkill(Integer id) {
-        skillRepository.delete(id);
+    public Skill deleteSkill(Integer id) {
+       return skillRepository.delete(id);
     }
 
     public Skill updateSkill(Skill skill) {

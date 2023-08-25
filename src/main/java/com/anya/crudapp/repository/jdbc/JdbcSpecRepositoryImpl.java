@@ -21,22 +21,23 @@ public class JdbcSpecRepositoryImpl extends JdbcUtils implements SpecialtyReposi
 
     @Override
     public Specialty get(Integer id) {
-        String request = "SELECT spec_name FROM demobase.specialty WHERE id = ?;";
+        Specialty specialty = new Specialty();
+        String request = "SELECT * FROM specialty WHERE id = ?;";
         try (PreparedStatement statement = JdbcUtils.preparedStatement(request);) {
             statement.setInt(1, id);
             ResultSet output = statement.executeQuery();
             while (output.next()) {
-                return mapResultSetToSpecialty(output);
+                specialty = mapResultSetToSpecialty(output);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return null;
+        return specialty;
     }
 
     @Override
     public Specialty update(Specialty object) {
-        String request = "UPDATE demobase.specialty SET spec_name = ? WHERE id = ?";
+        String request = "UPDATE specialty SET spec_name = ? WHERE id = ?";
         try (PreparedStatement statement = JdbcUtils.preparedStatement(request)) {
             statement.setString(1, object.getSpecName());
             statement.setInt(2, object.getId());
@@ -48,28 +49,31 @@ public class JdbcSpecRepositoryImpl extends JdbcUtils implements SpecialtyReposi
     }
 
     @Override
-    public void delete(Integer id) {
-        String request = "DELETE FROM demobase.specialty WHERE id =?;";
+    public Specialty delete(Integer id) {
+        Specialty specialty = get(id);
+        String request = "DELETE FROM specialty WHERE id = ?;";
         try (PreparedStatement statement = JdbcUtils.preparedStatement(request)) {
             statement.setInt(1, id);
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
+      return specialty;
     }
 
     @Override
     public Specialty insert(Specialty object) {
-        String request = "INSERT INTO demobase.specialty (spec_name) VALUES(?);";
+        int id = 0;
+        String request = "INSERT INTO specialty (spec_name) VALUES (?);";
         try (PreparedStatement preparedStatement = JdbcUtils.preparedStatementWithKeys(request)) {
             preparedStatement.setString(1, object.getSpecName());
             preparedStatement.executeUpdate();
             ResultSet resultId = preparedStatement.getGeneratedKeys();
-            int id = 0;
+
             while (resultId.next()) {
                 id = resultId.getInt(1);
+                object.setId(id);
             }
-            object.setId(id);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -78,18 +82,18 @@ public class JdbcSpecRepositoryImpl extends JdbcUtils implements SpecialtyReposi
 
     @Override
     public Integer searchByName(String name) {
-        int id = 0;
-        String request = "SELECT id FROM demobase.specialty WHERE spec_name LIKE ?";
+        int resultId = -1;
+        String request = "SELECT id FROM specialty WHERE spec_name LIKE ?";
         try (PreparedStatement statement = JdbcUtils.preparedStatement(request)) {
             statement.setString(1, name);
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
-                id = resultSet.getInt(1);
+                resultId = resultSet.getInt(1);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return id;
+        return resultId;
     }
 
     @Override

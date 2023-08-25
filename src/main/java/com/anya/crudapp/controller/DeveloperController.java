@@ -25,8 +25,8 @@ public class DeveloperController {
         return developerService.getDeveloper(id);
     }
 
-    public void deleteDeveloper(Integer id) {
-        developerService.deleteDeveloper(id);
+    public Developer deleteDeveloper(Integer id) {
+        return developerService.deleteDeveloper(id);
     }
 
     public Integer getByName(String name) {

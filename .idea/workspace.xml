@@ -4,15 +4,67 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="979a2c1f-b6db-4309-ae99-18d2999326c1" name="Changes" comment="first version">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="979a2c1f-b6db-4309-ae99-18d2999326c1" name="Changes" comment="second version">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_21_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mysql_mysql_connector_j_8_0_33.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_opencsv_opencsv_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_14_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_14_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_liquibase_liquibase_core_4_23_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_5_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_5_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/developersCRUD.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ApplicationRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/utils/LiquibaseRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/view/MainView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/master.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/anya/crudapp/service/DeveloperServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/anya/crudapp/service/SkillServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/anya/crudapp/service/SpecialtyServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/controller/DeveloperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/controller/DeveloperController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/controller/SkillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/controller/SkillController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/controller/SpecialtyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/controller/SpecialtyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/model/Developer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/model/Developer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/repository/GenericRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/repository/GenericRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/repository/jdbc/JdbcDevRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/repository/jdbc/JdbcDevRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/repository/jdbc/JdbcSkillRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/repository/jdbc/JdbcSkillRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/repository/jdbc/JdbcSpecRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/repository/jdbc/JdbcSpecRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/service/DeveloperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/service/DeveloperService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/service/SkillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/service/SkillService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/service/SpecialtyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/service/SpecialtyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/utils/JdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/utils/JdbcUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/view/DeveloperView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/view/DeveloperView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/view/SkillView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/view/SkillView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/view/SpecialtyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/anya/crudapp/view/SpecialtyView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/changelog.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/createTable.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/createTable.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sh.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,64 +84,144 @@
     <option name="NEW_BASE" value="master" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="89143128-aa8b-473a-a91c-3d1581ddab9a" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2TQHJ87bLBGq5diHSTAAG92mL9W" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "module",
-      "directory"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;module&quot;,
+      &quot;directory&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected="Application.JdbcSpecRepositoryImpl">
-    <configuration name="JdbcSpecRepositoryImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.anya.crudapp.repository.jdbc.JdbcSpecRepositoryImpl" />
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn site:effective-site" />
+      <command value="mvn --builder" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.DeveloperServiceTest.createDeveloper">
+    <configuration name="DeveloperServiceTest.createDeveloper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="developersCRUD" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.anya.crudapp.repository.jdbc.utils.*" />
+          <option name="PATTERN" value="com.anya.crudapp.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.anya.crudapp.service" />
+      <option name="MAIN_CLASS_NAME" value="com.anya.crudapp.service.DeveloperServiceTest" />
+      <option name="METHOD_NAME" value="createDeveloper" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SkillView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.anya.crudapp.view.SkillView" />
+    <configuration name="DeveloperServiceTest.deleteDeveloper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="developersCRUD" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.anya.crudapp.view.*" />
+          <option name="PATTERN" value="com.anya.crudapp.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.anya.crudapp.service" />
+      <option name="MAIN_CLASS_NAME" value="com.anya.crudapp.service.DeveloperServiceTest" />
+      <option name="METHOD_NAME" value="deleteDeveloper" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeveloperServiceTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="developersCRUD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.anya.crudapp.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.anya.crudapp.service" />
+      <option name="MAIN_CLASS_NAME" value="com.anya.crudapp.service.DeveloperServiceTest" />
+      <option name="METHOD_NAME" value="getAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeveloperServiceTest.searchByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="developersCRUD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.anya.crudapp.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.anya.crudapp.service" />
+      <option name="MAIN_CLASS_NAME" value="com.anya.crudapp.service.DeveloperServiceTest" />
+      <option name="METHOD_NAME" value="searchByName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeveloperServiceTest.updateDeveloper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="developersCRUD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.anya.crudapp.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.anya.crudapp.service" />
+      <option name="MAIN_CLASS_NAME" value="com.anya.crudapp.service.DeveloperServiceTest" />
+      <option name="METHOD_NAME" value="updateDeveloper" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JdbcSpecRepositoryImpl" />
-        <item itemvalue="Application.SkillView" />
+        <item itemvalue="JUnit.DeveloperServiceTest.createDeveloper" />
+        <item itemvalue="JUnit.DeveloperServiceTest.searchByName" />
+        <item itemvalue="JUnit.DeveloperServiceTest.getAll" />
+        <item itemvalue="JUnit.DeveloperServiceTest.deleteDeveloper" />
+        <item itemvalue="JUnit.DeveloperServiceTest.updateDeveloper" />
       </list>
     </recent_temporary>
   </component>
@@ -109,7 +241,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692253318286</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first version">
+      <created>1692253953401</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692253953401</updated>
+    </task>
+    <task id="LOCAL-00003" summary="first version">
+      <created>1692254032905</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692254032905</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +283,30 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first version" />
-    <option name="LAST_COMMIT_MESSAGE" value="first version" />
+    <MESSAGE value="second version" />
+    <option name="LAST_COMMIT_MESSAGE" value="second version" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="this" />
+        <watch expression="getSpec" />
+      </configuration>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/test/java/com/anya/crudapp/service/DeveloperServiceTest.java" line="73">
+        <watch expression="((DeveloperServiceTest)this).specialty" language="JAVA" custom="com.anya.crudapp.service.DeveloperServiceTest" />
+      </inline-watch>
+    </watches-manager>
   </component>
 </project>

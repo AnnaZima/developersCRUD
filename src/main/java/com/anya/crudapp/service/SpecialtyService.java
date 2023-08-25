@@ -36,8 +36,8 @@ public class SpecialtyService {
         return specialtyRepository.get(id);
     }
 
-    public void deleteSpecialty(Integer id) {
-        specialtyRepository.delete(id);
+    public Specialty deleteSpecialty(Integer id) {
+      return specialtyRepository.delete(id);
     }
 
     public List<Specialty> getALl() {

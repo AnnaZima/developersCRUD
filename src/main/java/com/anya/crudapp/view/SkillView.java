@@ -14,6 +14,7 @@ public class SkillView {
     public void getSkillById() {
         System.out.println(SKILL_ID);
         int id = scanner.nextInt();
+        scanner.skip("\n");
         System.out.println(skillController.getSkill(id));
     }
 
@@ -38,8 +39,8 @@ public class SkillView {
     public void deleteSkill() {
         System.out.println(SKILL_ID);
         int id = scanner.nextInt();
-        skillController.deleteSkill(id);
-        System.out.println("Элемент удален");
+       Skill skill = skillController.deleteSkill(id);
+        System.out.println("Элемент " + skill +  " удален");
     }
 
     public void getAll() {

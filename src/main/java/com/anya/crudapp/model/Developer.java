@@ -79,6 +79,6 @@ public class Developer {
                 ", skills=" + skills +
                 ", specialty=" + specialty +
                 ", status=" + status +
-                '}';
+                '}' + "\n";
     }
 }

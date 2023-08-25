@@ -2,10 +2,12 @@ package com.anya.crudapp.view;
 
 import com.anya.crudapp.controller.DeveloperController;
 import com.anya.crudapp.controller.SkillController;
+import com.anya.crudapp.model.Developer;
+
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class DeveloperView {
-    SkillController skillController = new SkillController();
     DeveloperController developerController = new DeveloperController();
 
     Scanner scanner = new Scanner(System.in);
@@ -52,8 +54,8 @@ public class DeveloperView {
     public void deleteDeveloper() {
         System.out.println(DEV_ID);
         int id = scanner.nextInt();
-        developerController.deleteDeveloper(id);
-        System.out.println("Успешно удален");
+        Developer developer = developerController.deleteDeveloper(id);
+        System.out.println("Элемент " + developer +  " удален");
     }
 
     public void getAll() {
