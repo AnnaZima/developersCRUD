@@ -6,7 +6,6 @@ import com.anya.crudapp.model.Specialty;
 import com.anya.crudapp.model.Status;
 import com.anya.crudapp.repository.DeveloperRepository;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -26,44 +25,39 @@ import static org.mockito.Mockito.when;
 public class DeveloperServiceTest {
 
     @Mock
-    Specialty specialty;
-    @Mock
-    List<Skill> skillList;
-    @InjectMocks
-    Developer developer;
-    @Mock
     DeveloperRepository developerRepository;
     @InjectMocks
     DeveloperService developerService;
-//    @Mock
-//    SpecialtyRepository specialtyRepository;
-//    @Mock
-//    SkillRepository skillRepository;
 
-    @BeforeEach
-    void init() {
-        specialty = new Specialty();
-        specialty.setId(2);
-        specialty.setSpecName("java");
-        skillList = new ArrayList<>();
-        Skill skill = new Skill(3, "mockito");
-        skillList.add(skill);
-        developer = new Developer(1, "Ivan", "Ivanov", skillList, specialty, Status.ACTIVE);
+    private Specialty getSpecialty() {
+        return new Specialty(2, "java");
+    }
+    private List<Skill> getSkills() {
+        List<Skill> skills = new ArrayList<>();
+          Skill skillFirst = new Skill(3, "mockito");
+          Skill skillSecond = new Skill(4, "jdbc");
+          skills.add(skillFirst);
+          skills.add(skillSecond);
+          return skills;
+    }
+
+    private Developer getDeveloper() {
+        return new Developer(1, "Ivan", "Ivanov", getSkills(), getSpecialty(), Status.ACTIVE);
     }
 
     @Test
     void createDeveloper() {
         List<String> nameOfSkills = new ArrayList<>();
-        when(developerRepository.insert(any(Developer.class))).thenReturn(developer);
+        when(developerRepository.insert(any(Developer.class))).thenReturn(getDeveloper());
         Developer newDeveloper = developerService.createDeveloper("Ivan", "Ivanov", nameOfSkills, "java");
-        Assertions.assertEquals(developer.getFirstName(), newDeveloper.getFirstName());
-        Assertions.assertEquals(developer.getId(), newDeveloper.getId());
+        Assertions.assertEquals(getDeveloper().getFirstName(), newDeveloper.getFirstName());
+        Assertions.assertEquals(getDeveloper().getId(), newDeveloper.getId());
 
     }
 
     @Test
-    void getDeveloper() {
-        when(developerRepository.get(1)).thenReturn(developer);
+    void getDeveloperById() {
+        when(developerRepository.get(1)).thenReturn(getDeveloper());
         Developer foundDeveloper = developerService.getDeveloper(1);
         Assertions.assertEquals("Ivan", foundDeveloper.getFirstName());
     }
@@ -71,16 +65,15 @@ public class DeveloperServiceTest {
     @Test
     void updateDeveloper() {
         List<String> nameOfSkills = new ArrayList<>();
-        //  when(specialtyRepository.insert(any(Specialty.class))).thenReturn(specialty);
-        when(developerRepository.update(any(Developer.class))).thenReturn(developer);
+        when(developerRepository.update(any(Developer.class))).thenReturn(getDeveloper());
         Developer updated = developerService.updateDeveloper(1, "Ivan", "Ivanov", nameOfSkills, "java");
         Assertions.assertEquals("Ivan", updated.getFirstName());
-        Assertions.assertEquals("java", developer.getSpecialty().getSpecName());
+        Assertions.assertEquals("java", updated.getSpecialty().getSpecName());
     }
 
     @Test
     void deleteDeveloper() {
-        when(developerRepository.delete(anyInt())).thenReturn(developer);
+        when(developerRepository.delete(anyInt())).thenReturn(getDeveloper());
         Developer deleted = developerService.deleteDeveloper(1);
         Assertions.assertEquals("Ivanov", deleted.getLastName());
         verify(developerRepository).delete(1);
@@ -90,19 +83,17 @@ public class DeveloperServiceTest {
     @Test
     void getAll() {
         List<Developer> developerList = new ArrayList<>();
-        developerList.add(developer);
+        developerList.add(getDeveloper());
         when(developerRepository.getAll()).thenReturn(developerList);
         List<Developer> developers = developerService.getAll();
-        Assertions.assertEquals(developer, developers.get(0));
+        Assertions.assertEquals(getDeveloper().getFirstName(), developers.get(0).getFirstName());
     }
 
     @Test
     void searchByName() {
-        when(developerRepository.searchByName("Ivanov")).thenReturn(developer.getId());
+        when(developerRepository.searchByName("Ivanov")).thenReturn(getDeveloper().getId());
         int id = developerService.getByName("Ivanov");
         Assertions.assertEquals(1, id);
 
     }
-
-
 }
